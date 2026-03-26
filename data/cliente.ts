@@ -15,13 +15,13 @@ export const dadosCliente = {
     whatsappLink: "https://wa.me/5548988632453?text=Olá, Preciso de um orçamento!!",
     instagram: "https://instagram.com", // Adicione o link real se houver
     email: "",
-    endereco: "R. Domingos de Vila, 730 - Imigrantes - Criciúma - SC, 88813-730",
+    endereco: "R. Domingos de Vila, 79 - Imigrantes - Criciúma - SC, 88813-730",
     telefone: "(48) 98863-2453",
   },
 
   // Conteúdo principal
   conteudo: {
-    tituloPrincipal: "Desentupimento em Criciúma: Rápido e Sem Quebra",
+    tituloPrincipal: "Desentupidora Patrício Criciúma: Rápido e Sem Quebra",
     subtitulo: "Atendimento especializado 24h para residências e empresas. Resolvemos seu problema sem sujeira e sem uso de produtos químicos agressivos.",
     sobreNos:
       "Somos a Desentupidora Patrício, especialistas em desentupimento com atendimento 24 horas em Criciúma. Utilizamos equipamentos rotativos e tecnologia de vácuo para resolver entupimentos sem necessidade de quebrar pisos ou paredes. Nossa equipe é experiente e oferece soluções rápidas e confiáveis para residências e empresas, com garantia de trabalho limpo e profissional.",
