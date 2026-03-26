@@ -160,9 +160,48 @@ const Page = () => {
             </span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1,
+                },
+              },
+            }}
+          >
             {/* Testimonial 1 - João */}
-            <div className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 25,
+                  }
+                },
+              }}
+              whileHover={{ 
+                scale: 1.03, 
+                y: -4,
+                boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
+                borderColor: "rgba(245, 158, 11, 0.6)",
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 25,
+              }}
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+            >
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
@@ -186,13 +225,38 @@ const Page = () => {
                   ))}
                 </div>
                 <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;O vaso sanitário entupiu de madrugada e o Patrício atendeu em menos de uma hora. Resolveu sem quebrar nada e sem bagunça. Serviço impecável!&quot;
+                  &quot;O Patrício atendeu em menos de uma hora de madrugada. Resolvemos sem quebrar nada e sem bagunça. Serviço impecável!&quot;
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             {/* Testimonial 2 - Ana */}
-            <div className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 25,
+                  }
+                },
+              }}
+              whileHover={{ 
+                scale: 1.03, 
+                y: -4,
+                boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
+                borderColor: "rgba(245, 158, 11, 0.6)",
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 25,
+              }}
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+            >
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
@@ -216,13 +280,38 @@ const Page = () => {
                   ))}
                 </div>
                 <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;A pia da cozinha estava completamente entupida há dias. A equipe usou equipamento rotativo e limpou tudo sem abrir o piso. Recomendo demais!&quot;
+                  &quot;A equipe usou equipamento rotativo e limpou tudo sem abrir o piso. Recomendo demais!&quot;
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             {/* Testimonial 3 - Marcos */}
-            <div className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 25,
+                  }
+                },
+              }}
+              whileHover={{ 
+                scale: 1.03, 
+                y: -4,
+                boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
+                borderColor: "rgba(245, 158, 11, 0.6)",
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 25,
+              }}
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+            >
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
@@ -246,11 +335,11 @@ const Page = () => {
                   ))}
                 </div>
                 <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;A caixa de gordura do meu restaurante estava cheia. O Patrício fez a limpeza completa de forma rápida e higiênica. Profissional de verdade, virou minha referência!&quot;
+                  &quot;O Patrício fez a limpeza completa de forma rápida e higiênica. Profissional de verdade, virou minha referência!&quot;
                 </p>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </section>
 
         {/* FooterCTA Section */}
