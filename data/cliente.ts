@@ -4,54 +4,54 @@
 export const dadosCliente = {
   // Cores do tema
   cores: {
-    primaryColor: "#d4af37", // Dourado
+    primaryColor: "#0066cc", // Azul profissional
     secondaryColor: "#1a1a1a", // Preto
-    accentColor: "#c9a227", // Dourado escuro
+    accentColor: "#004fa3", // Azul escuro
   },
 
   // Informações de contato
   contato: {
-    whatsappNumber: "5544999324635",
-    whatsappLink: "https://wa.me/5544999324635?text=Olá, Preciso de um orçamento!!",
+    whatsappNumber: "5548988632453",
+    whatsappLink: "https://wa.me/5548988632453?text=Olá, Preciso de um orçamento!!",
     instagram: "https://instagram.com", // Adicione o link real se houver
     email: "",
-    endereco: "Rua Deodoro da Fonseca, s/n - Zona Norte - Maringá - PR, CEP: 87.1000-000",
-    telefone: "(44) 99932-4635",
+    endereco: "R. Domingos de Vila, 730 - Imigrantes - Criciúma - SC, 88813-730",
+    telefone: "(48) 98863-2453",
   },
 
   // Conteúdo principal
   conteudo: {
-    tituloPrincipal: "Dedetizadora e Desentupidora Lady Bug",
-    subtitulo: "Serviços de dedetização e desentupimento quando você mais precisa.\nEstamos prontos para ajudar 24/7.",
+    tituloPrincipal: "Desentupimento em Criciúma: Rápido e Sem Quebra",
+    subtitulo: "Atendimento especializado 24h para residências e empresas. Resolvemos seu problema sem sujeira e sem uso de produtos químicos agressivos.",
     sobreNos:
-      "Somos uma empresa especializada em serviços de dedetização e desentupimento com atendimento 24 horas. Oferecemos soluções rápidas e confiáveis para todos os tipos de pragas e entupimentos. Nossa equipe é experiente e utiliza equipamentos de última geração para garantir segurança, qualidade e eficácia.",
+      "Somos a Desentupidora Patrício, especialistas em desentupimento com atendimento 24 horas em Criciúma. Utilizamos equipamentos rotativos e tecnologia de vácuo para resolver entupimentos sem necessidade de quebrar pisos ou paredes. Nossa equipe é experiente e oferece soluções rápidas e confiáveis para residências e empresas, com garantia de trabalho limpo e profissional.",
   },
 
   // Serviços oferecidos
   servicos: [
     {
       id: 1,
-      titulo: "Dedetização",
-      descricao: "Controle completo de pragas e insetos",
-      icone: "🐛",
+      titulo: "Desentupimento de Vaso Sanitário",
+      descricao: "Solução imediata sem danos à louça",
+      icone: "🚽",
     },
     {
       id: 2,
-      titulo: "Desentupimento",
-      descricao: "Solução rápida para todos os tipos de entupimento",
-      icone: "🔧",
+      titulo: "Desentupimento de Pias e Ralos",
+      descricao: "Desobstrução completa de encanamentos",
+      icone: "🚰",
     },
     {
       id: 3,
-      titulo: "Profissionais Certificados",
-      descricao: "Equipe treinada e qualificada",
-      icone: "👨‍⚕️",
+      titulo: "Limpeza de Caixa de Gordura",
+      descricao: "Manutenção técnica e preventiva para comércios e casas",
+      icone: "🏗️",
     },
     {
       id: 4,
-      titulo: "Atendimento 24/7",
-      descricao: "Disponível todos os dias, sem intervalo",
-      icone: "⏰",
+      titulo: "Tecnologia Sem Quebra",
+      descricao: "Equipamentos rotativos e vácuo, sem quebrar pisos ou paredes",
+      icone: "🛠️",
       destaque: true,
     },
   ],
@@ -59,25 +59,25 @@ export const dadosCliente = {
   // Recursos principais (exibidos no hero)
   recursos: [
     {
-      titulo: "Resposta Rápida",
-      descricao: "Atendimento em menos de 30 minutos",
+      titulo: "Atendimento 24h",
+      descricao: "Disponível todos os dias da semana",
     },
     {
-      titulo: "Serviços Variados",
-      descricao: "Residencial, comercial e industrial",
+      titulo: "Trabalho Limpo",
+      descricao: "Sem sujeira e sem produtos químicos agressivos",
     },
     {
-      titulo: "Preços Transparentes",
-      descricao: "Orçamento honesto sem taxas ocultas",
+      titulo: "Tecnologia Avançada",
+      descricao: "Equipamentos rotativos e vácuo profissional",
     },
   ],
 
   // Metadados SEO
   seo: {
-    siteTitle: "Dedetizadora e Desentupidora Lady Bug | (44) 99932-4635",
+    siteTitle: "Desentupidora Patrício Criciúma | Atendimento 24h | (48) 98863-2453",
     description:
-      "Serviços de dedetização e desentupimento em Maringá. Atendimento 24 horas. Profissionais certificados e preços transparentes.",
-    url: "https://dedetizadora-lady-bug.vercel.app",
+      "Desentupidora Patrício em Criciúma - Atendimento 24h especializado em desentupimento sem quebra. Pias, ralos, vasos sanitários e limpeza de caixa de gordura.",
+    url: "https://desentupidora-patricio.vercel.app",
     ogImage: "/og-image.jpg",
   },
 }
