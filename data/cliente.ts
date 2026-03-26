@@ -21,7 +21,7 @@ export const dadosCliente = {
 
   // Conteúdo principal
   conteudo: {
-    tituloPrincipal: "Desentupimento em Criciúma: Rápido e Sem Quebra",
+    tituloPrincipal: "Desentupidora Patrício Criciúma: Rápido e Sem Quebra",
     subtitulo: "Atendimento especializado 24h para residências e empresas. Resolvemos seu problema sem sujeira e sem uso de produtos químicos agressivos.",
     sobreNos:
       "Somos a Desentupidora Patrício, especialistas em desentupimento com atendimento 24 horas em Criciúma. Utilizamos equipamentos rotativos e tecnologia de vácuo para resolver entupimentos sem necessidade de quebrar pisos ou paredes. Nossa equipe é experiente e oferece soluções rápidas e confiáveis para residências e empresas, com garantia de trabalho limpo e profissional.",
