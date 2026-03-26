@@ -114,20 +114,20 @@ const Page = () => {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Testimonial 1 - Carlos */}
+            {/* Testimonial 1 - João */}
             <div className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
                   <Image
-                    src="/brazilian-man-professional-portrait.jpg"
-                    alt="Carlos Silva"
+                    src="/cliente-joao-desentupimento.jpg"
+                    alt="João Pereira"
                     width={56}
                     height={56}
                     className="rounded-full w-14 h-14 object-cover border-2 border-amber-500/50"
                   />
                   <div>
-                    <h4 className="font-semibold text-white text-base">Carlos Silva</h4>
+                    <h4 className="font-semibold text-white text-base">João Pereira</h4>
                     <p className="text-sm text-zinc-400">Proprietário de Imóvel</p>
                   </div>
                 </div>
@@ -139,26 +139,26 @@ const Page = () => {
                   ))}
                 </div>
                 <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;Tive problema com barata em casa e foi resolvido completamente. Atendimento rápido, profissional e com garantia. Super recomendo!&quot;
+                  &quot;O vaso sanitário entupiu de madrugada e o Patrício atendeu em menos de uma hora. Resolveu sem quebrar nada e sem bagunça. Serviço impecável!&quot;
                 </p>
               </div>
             </div>
 
-            {/* Testimonial 2 - Mariana */}
+            {/* Testimonial 2 - Ana */}
             <div className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
                   <Image
-                    src="/brazilian-woman-professional-portrait.jpg"
-                    alt="Mariana Costa"
+                    src="/cliente-ana-desentupimento.jpg"
+                    alt="Ana Souza"
                     width={56}
                     height={56}
                     className="rounded-full w-14 h-14 object-cover border-2 border-amber-500/50"
                   />
                   <div>
-                    <h4 className="font-semibold text-white text-base">Mariana Costa</h4>
-                    <p className="text-sm text-zinc-400">Dona de Casa</p>
+                    <h4 className="font-semibold text-white text-base">Ana Souza</h4>
+                    <p className="text-sm text-zinc-400">Moradora de Criciúma</p>
                   </div>
                 </div>
                 <div className="flex gap-1 mb-3">
@@ -169,26 +169,26 @@ const Page = () => {
                   ))}
                 </div>
                 <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;Meu encanamento entupiu e não sabia o que fazer. Desentupiram na hora com equipamento profissional. Ficou como novo!&quot;
+                  &quot;A pia da cozinha estava completamente entupida há dias. A equipe usou equipamento rotativo e limpou tudo sem abrir o piso. Recomendo demais!&quot;
                 </p>
               </div>
             </div>
 
-            {/* Testimonial 3 - Roberto */}
+            {/* Testimonial 3 - Marcos */}
             <div className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
                   <Image
-                    src="/brazilian-man-casual-portrait.jpg"
-                    alt="Roberto Oliveira"
+                    src="/cliente-marcos-desentupimento.jpg"
+                    alt="Marcos Ramos"
                     width={56}
                     height={56}
                     className="rounded-full w-14 h-14 object-cover border-2 border-amber-500/50"
                   />
                   <div>
-                    <h4 className="font-semibold text-white text-base">Roberto Oliveira</h4>
-                    <p className="text-sm text-zinc-400">Gerente Comercial</p>
+                    <h4 className="font-semibold text-white text-base">Marcos Ramos</h4>
+                    <p className="text-sm text-zinc-400">Dono de Restaurante</p>
                   </div>
                 </div>
                 <div className="flex gap-1 mb-3">
@@ -199,7 +199,7 @@ const Page = () => {
                   ))}
                 </div>
                 <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;Precisei de dedetização urgente em minha empresa e consegui atendimento no mesmo dia. Equipe profissional, rápida e com atendimento 24h realmente confiável!&quot;
+                  &quot;A caixa de gordura do meu restaurante estava cheia. O Patrício fez a limpeza completa de forma rápida e higiênica. Profissional de verdade, virou minha referência!&quot;
                 </p>
               </div>
             </div>
