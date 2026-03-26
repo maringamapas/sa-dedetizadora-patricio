@@ -175,117 +175,7 @@ const Page = () => {
               },
             }}
           >
-            {/* Testimonial 1 - João */}
-            <motion.div 
-              variants={{
-                hidden: { opacity: 0, y: 10 },
-                visible: { 
-                  opacity: 1, 
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 25,
-                  }
-                },
-              }}
-              whileHover={{ 
-                scale: 1.03, 
-                y: -4,
-                boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
-                borderColor: "rgba(245, 158, 11, 0.6)",
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 400,
-                damping: 25,
-              }}
-              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-4">
-                  <Image
-                    src="/cliente-joao-desentupimento.jpg"
-                    alt="João Pereira"
-                    width={56}
-                    height={56}
-                    className="rounded-full w-14 h-14 object-cover border-2 border-amber-500/50"
-                  />
-                  <div>
-                    <h4 className="font-semibold text-white text-base">João Pereira</h4>
-                    <p className="text-sm text-zinc-400">Proprietário de Imóvel</p>
-                  </div>
-                </div>
-                <div className="flex gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-amber-400">
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;O Patrício atendeu em menos de uma hora de madrugada. Resolvemos sem quebrar nada e sem bagunça. Serviço impecável!&quot;
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Testimonial 2 - Ana */}
-            <motion.div 
-              variants={{
-                hidden: { opacity: 0, y: 10 },
-                visible: { 
-                  opacity: 1, 
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 25,
-                  }
-                },
-              }}
-              whileHover={{ 
-                scale: 1.03, 
-                y: -4,
-                boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
-                borderColor: "rgba(245, 158, 11, 0.6)",
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 400,
-                damping: 25,
-              }}
-              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-4">
-                  <Image
-                    src="/cliente-ana-desentupimento.jpg"
-                    alt="Ana Souza"
-                    width={56}
-                    height={56}
-                    className="rounded-full w-14 h-14 object-cover border-2 border-amber-500/50"
-                  />
-                  <div>
-                    <h4 className="font-semibold text-white text-base">Ana Souza</h4>
-                    <p className="text-sm text-zinc-400">Moradora de Criciúma</p>
-                  </div>
-                </div>
-                <div className="flex gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-amber-400">
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;A equipe usou equipamento rotativo e limpou tudo sem abrir o piso. Recomendo demais!&quot;
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Testimonial 3 - Marcos */}
+            {/* Testimonial 1 - Marcos */}
             <motion.div 
               variants={{
                 hidden: { opacity: 0, y: 10 },
@@ -335,7 +225,117 @@ const Page = () => {
                   ))}
                 </div>
                 <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                  &quot;O Patrício fez a limpeza completa de forma rápida e higiênica. Profissional de verdade, virou minha referência!&quot;
+                  &quot;A caixa de gordura do meu restaurante estava entupida e com mau cheiro. Liguei de manhã e no mesmo dia a equipe fez a limpeza completa. Serviço impecável, sem sujeira. Recomendo muito!&quot;
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Testimonial 2 - João */}
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 25,
+                  }
+                },
+              }}
+              whileHover={{ 
+                scale: 1.03, 
+                y: -4,
+                boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
+                borderColor: "rgba(245, 158, 11, 0.6)",
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 25,
+              }}
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <Image
+                    src="/cliente-joao-desentupimento.jpg"
+                    alt="João Pereira"
+                    width={56}
+                    height={56}
+                    className="rounded-full w-14 h-14 object-cover border-2 border-amber-500/50"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-white text-base">João Pereira</h4>
+                    <p className="text-sm text-zinc-400">Morador de Criciúma</p>
+                  </div>
+                </div>
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-amber-400">
+                      ★
+                    </span>
+                  ))}
+                </div>
+                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
+                  &quot;O vaso entupiu num domingo à noite e em menos de 40 minutos o técnico estava aqui. Resolveu tudo rapidinho, foi atencioso e o preço foi justo. Ótimo atendimento no fim de semana!&quot;
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Testimonial 3 - Ana */}
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 25,
+                  }
+                },
+              }}
+              whileHover={{ 
+                scale: 1.03, 
+                y: -4,
+                boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
+                borderColor: "rgba(245, 158, 11, 0.6)",
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 25,
+              }}
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <Image
+                    src="/cliente-ana-desentupimento.jpg"
+                    alt="Ana Souza"
+                    width={56}
+                    height={56}
+                    className="rounded-full w-14 h-14 object-cover border-2 border-amber-500/50"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-white text-base">Ana Souza</h4>
+                    <p className="text-sm text-zinc-400">Moradora de Criciúma</p>
+                  </div>
+                </div>
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-amber-400">
+                      ★
+                    </span>
+                  ))}
+                </div>
+                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
+                  &quot;Pia e ralo acumulando água há dias. A equipe identificou o problema rapidamente e usou equipamento profissional pra resolver tudo de uma vez. Ótimo custo-benefício e atendimento educado!&quot;
                 </p>
               </div>
             </motion.div>
