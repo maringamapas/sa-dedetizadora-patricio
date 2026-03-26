@@ -15,7 +15,7 @@ export const dadosCliente = {
     whatsappLink: "https://wa.me/5548988632453?text=Olá, Preciso de um orçamento!!",
     instagram: "https://instagram.com", // Adicione o link real se houver
     email: "",
-    endereco: "R. Domingos de Vila, 730 - Imigrantes - Criciúma - SC, 88813-730",
+    endereco: "R. Domingos de Vila, 79 - Imigrantes - Criciúma - SC, 88813-730",
     telefone: "(48) 98863-2453",
   },
 
