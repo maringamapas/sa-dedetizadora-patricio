@@ -79,13 +79,54 @@ const Page = () => {
             </div>
 
             {/* Right Column - Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <motion.div 
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.1,
+                  },
+                },
+              }}
+            >
               {dadosCliente.servicos.map((servico) => (
-                <div
+                <motion.div
                   key={servico.id}
-                  className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8"
+                  variants={{
+                    hidden: { opacity: 0, y: 10 },
+                    visible: { 
+                      opacity: 1, 
+                      y: 0,
+                      transition: {
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 25,
+                      }
+                    },
+                  }}
+                  whileHover={{ 
+                    scale: 1.03, 
+                    y: -4,
+                    boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
+                    borderColor: "rgba(245, 158, 11, 0.6)",
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 25,
+                  }}
+                  className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10"
+                    whileHover={{ opacity: 1.5 }}
+                    transition={{ duration: 0.3 }}
+                  />
                   {servico.destaque && (
                     <div className="absolute top-4 right-4">
                       <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30">
@@ -95,13 +136,19 @@ const Page = () => {
                     </div>
                   )}
                   <div className="relative z-10">
-                    <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{servico.icone}</div>
+                    <motion.div 
+                      className="text-3xl sm:text-4xl mb-3 sm:mb-4"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    >
+                      {servico.icone}
+                    </motion.div>
                     <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">{servico.titulo}</h3>
                     <p className="text-sm sm:text-base text-zinc-300">{servico.descricao}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
 
