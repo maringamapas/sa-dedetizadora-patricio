@@ -89,7 +89,7 @@ const Page = () => {
                 visible: {
                   opacity: 1,
                   transition: {
-                    staggerChildren: 0.1,
+                    staggerChildren: 0.08,
                   },
                 },
               }}
@@ -104,8 +104,8 @@ const Page = () => {
                       y: 0,
                       transition: {
                         type: "spring",
-                        stiffness: 400,
-                        damping: 25,
+                        stiffness: 300,
+                        damping: 20,
                       }
                     },
                   }}
@@ -115,18 +115,15 @@ const Page = () => {
                     boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
                     borderColor: "rgba(245, 158, 11, 0.6)",
                   }}
+                  whileTap={{ scale: 0.98 }}
                   transition={{
                     type: "spring",
-                    stiffness: 400,
-                    damping: 25,
+                    stiffness: 300,
+                    damping: 20,
                   }}
-                  className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+                  className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer touch-manipulation"
                 >
-                  <motion.div 
-                    className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10"
-                    whileHover={{ opacity: 1.5 }}
-                    transition={{ duration: 0.3 }}
-                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10 transition-opacity duration-300 group-hover:opacity-150" />
                   {servico.destaque && (
                     <div className="absolute top-4 right-4">
                       <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30">
@@ -136,13 +133,9 @@ const Page = () => {
                     </div>
                   )}
                   <div className="relative z-10">
-                    <motion.div 
-                      className="text-3xl sm:text-4xl mb-3 sm:mb-4"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                    >
+                    <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 transition-transform duration-200 group-hover:scale-110">
                       {servico.icone}
-                    </motion.div>
+                    </div>
                     <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">{servico.titulo}</h3>
                     <p className="text-sm sm:text-base text-zinc-300">{servico.descricao}</p>
                   </div>
@@ -170,7 +163,7 @@ const Page = () => {
               visible: {
                 opacity: 1,
                 transition: {
-                  staggerChildren: 0.1,
+                  staggerChildren: 0.08,
                 },
               },
             }}
@@ -184,8 +177,8 @@ const Page = () => {
                   y: 0,
                   transition: {
                     type: "spring",
-                    stiffness: 400,
-                    damping: 25,
+                    stiffness: 300,
+                    damping: 20,
                   }
                 },
               }}
@@ -195,14 +188,15 @@ const Page = () => {
                 boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
                 borderColor: "rgba(245, 158, 11, 0.6)",
               }}
+              whileTap={{ scale: 0.98 }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 25,
+                stiffness: 300,
+                damping: 20,
               }}
-              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer touch-manipulation"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10 transition-opacity duration-300 group-hover:opacity-150" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
                   <Image
@@ -239,8 +233,8 @@ const Page = () => {
                   y: 0,
                   transition: {
                     type: "spring",
-                    stiffness: 400,
-                    damping: 25,
+                    stiffness: 300,
+                    damping: 20,
                   }
                 },
               }}
@@ -250,14 +244,15 @@ const Page = () => {
                 boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
                 borderColor: "rgba(245, 158, 11, 0.6)",
               }}
+              whileTap={{ scale: 0.98 }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 25,
+                stiffness: 300,
+                damping: 20,
               }}
-              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer touch-manipulation"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10 transition-opacity duration-300 group-hover:opacity-150" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
                   <Image
@@ -294,8 +289,8 @@ const Page = () => {
                   y: 0,
                   transition: {
                     type: "spring",
-                    stiffness: 400,
-                    damping: 25,
+                    stiffness: 300,
+                    damping: 20,
                   }
                 },
               }}
@@ -305,14 +300,15 @@ const Page = () => {
                 boxShadow: "0 20px 40px -12px rgba(245, 158, 11, 0.25)",
                 borderColor: "rgba(245, 158, 11, 0.6)",
               }}
+              whileTap={{ scale: 0.98 }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 25,
+                stiffness: 300,
+                damping: 20,
               }}
-              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer"
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/50 to-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 cursor-pointer touch-manipulation"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/10 transition-opacity duration-300 group-hover:opacity-150" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-4">
                   <Image
